@@ -11,9 +11,7 @@ router.get('/:throttle/:steering', function(req, res, next) {
   var steering = req.params.steering/1000;
   piblaster.setPwm(17, throttle);
   piblaster.setPwm(18, steering);
-  res.params.throttle = throttle;
-  res.params.steering = steering;
-  res.send(res.params);
+  res.send(JSON.stringify({"throttle": throttle, "steering": steering}));
 });
 
 module.exports = router;
