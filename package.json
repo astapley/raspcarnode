@@ -11,8 +11,8 @@
     "debug": "~2.2.0",
     "express": "~4.14.0",
     "morgan": "~1.7.0",
+    "pi-blaster.js": "^0.1.1",
     "pug": "^2.0.0-beta9",
-    "rpi-gpio": "^0.7.0",
     "serve-favicon": "~2.3.0"
   }
 }
